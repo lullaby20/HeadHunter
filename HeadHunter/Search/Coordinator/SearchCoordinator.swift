@@ -17,8 +17,7 @@ class SearchCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .purple
+        let viewController = SearchViewController()
         
         navigationController.pushViewController(viewController, animated: true)
     }

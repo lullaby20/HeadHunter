@@ -17,8 +17,7 @@ class ReflectionCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .brown
+        let viewController = ReflectionsViewController()
         
         navigationController.pushViewController(viewController, animated: true)
     }

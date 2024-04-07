@@ -17,8 +17,7 @@ class FavouriteCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .green
+        let viewController = FavouriteViewController()
         
         navigationController.pushViewController(viewController, animated: true)
     }

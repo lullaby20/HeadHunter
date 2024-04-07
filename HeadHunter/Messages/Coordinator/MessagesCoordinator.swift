@@ -17,8 +17,7 @@ class MessagesCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .orange
+        let viewController = MessagesViewController()
         
         navigationController.pushViewController(viewController, animated: true)
     }

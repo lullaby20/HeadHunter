@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6090EEC2BC2E70E00860885 /* SwiftUIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EEB2BC2E70E00860885 /* SwiftUIWrapper.swift */; };
+		F6090EEE2BC2E7E700860885 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EED2BC2E7E700860885 /* SearchView.swift */; };
+		F6090EF02BC2E7FF00860885 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EEF2BC2E7FF00860885 /* SearchViewController.swift */; };
+		F6090EF22BC2F03700860885 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EF12BC2F03700860885 /* FavouriteView.swift */; };
+		F6090EF42BC2F06600860885 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EF32BC2F06600860885 /* FavouriteViewController.swift */; };
+		F6090EF62BC2F0BC00860885 /* ReflectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EF52BC2F0BC00860885 /* ReflectionsView.swift */; };
+		F6090EF82BC2F0D300860885 /* ReflectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EF72BC2F0D300860885 /* ReflectionsViewController.swift */; };
+		F6090EFA2BC2F11F00860885 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EF92BC2F11F00860885 /* MessagesView.swift */; };
+		F6090EFC2BC2F13D00860885 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EFB2BC2F13D00860885 /* MessagesViewController.swift */; };
+		F6090EFE2BC2F17F00860885 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EFD2BC2F17F00860885 /* ProfileView.swift */; };
+		F6090F002BC2F19100860885 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6090EFF2BC2F19100860885 /* ProfileViewController.swift */; };
 		F69D2C1F2BC1BE0800475719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C1E2BC1BE0800475719 /* AppDelegate.swift */; };
-		F69D2C232BC1BE0800475719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C222BC1BE0800475719 /* ViewController.swift */; };
 		F69D2C292BC1BE0800475719 /* HeadHunter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C272BC1BE0800475719 /* HeadHunter.xcdatamodeld */; };
 		F69D2C2B2BC1BE0900475719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69D2C2A2BC1BE0900475719 /* Assets.xcassets */; };
 		F69D2C2E2BC1BE0900475719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69D2C2C2BC1BE0900475719 /* LaunchScreen.storyboard */; };
@@ -25,9 +35,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6090EEB2BC2E70E00860885 /* SwiftUIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWrapper.swift; sourceTree = "<group>"; };
+		F6090EED2BC2E7E700860885 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F6090EEF2BC2E7FF00860885 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F6090EF12BC2F03700860885 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		F6090EF32BC2F06600860885 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		F6090EF52BC2F0BC00860885 /* ReflectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionsView.swift; sourceTree = "<group>"; };
+		F6090EF72BC2F0D300860885 /* ReflectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionsViewController.swift; sourceTree = "<group>"; };
+		F6090EF92BC2F11F00860885 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		F6090EFB2BC2F13D00860885 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		F6090EFD2BC2F17F00860885 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F6090EFF2BC2F19100860885 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F69D2C1B2BC1BE0800475719 /* HeadHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69D2C1E2BC1BE0800475719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F69D2C222BC1BE0800475719 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F69D2C282BC1BE0800475719 /* HeadHunter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadHunter.xcdatamodel; sourceTree = "<group>"; };
 		F69D2C2A2BC1BE0900475719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F69D2C2D2BC1BE0900475719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6090EE92BC2E6F900860885 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F6090EEA2BC2E6FD00860885 /* SwiftUIWrapper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F6090EEA2BC2E6FD00860885 /* SwiftUIWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F6090EEB2BC2E70E00860885 /* SwiftUIWrapper.swift */,
+			);
+			path = SwiftUIWrapper;
+			sourceTree = "<group>";
+		};
 		F69D2C122BC1BE0800475719 = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +110,13 @@
 		F69D2C1D2BC1BE0800475719 /* HeadHunter */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EE92BC2E6F900860885 /* Common */,
 				F69D2C692BC2D10500475719 /* Profile */,
 				F69D2C622BC2D0DC00475719 /* Messages */,
 				F69D2C5B2BC2D0B200475719 /* Reflections */,
 				F69D2C542BC2D08800475719 /* Favourite */,
 				F69D2C4D2BC2D01E00475719 /* Search */,
 				F69D2C482BC2C17C00475719 /* Application */,
-				F69D2C222BC1BE0800475719 /* ViewController.swift */,
 				F69D2C2A2BC1BE0900475719 /* Assets.xcassets */,
 				F69D2C2C2BC1BE0900475719 /* LaunchScreen.storyboard */,
 				F69D2C2F2BC1BE0900475719 /* Info.plist */,
@@ -147,6 +183,8 @@
 		F69D2C512BC2D04200475719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EEF2BC2E7FF00860885 /* SearchViewController.swift */,
+				F6090EED2BC2E7E700860885 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +248,8 @@
 		F69D2C592BC2D0A200475719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EF12BC2F03700860885 /* FavouriteView.swift */,
+				F6090EF32BC2F06600860885 /* FavouriteViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,6 +306,8 @@
 		F69D2C602BC2D0CE00475719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EF52BC2F0BC00860885 /* ReflectionsView.swift */,
+				F6090EF72BC2F0D300860885 /* ReflectionsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +364,8 @@
 		F69D2C672BC2D0F900475719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EF92BC2F11F00860885 /* MessagesView.swift */,
+				F6090EFB2BC2F13D00860885 /* MessagesViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +422,8 @@
 		F69D2C6E2BC2D11B00475719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6090EFD2BC2F17F00860885 /* ProfileView.swift */,
+				F6090EFF2BC2F19100860885 /* ProfileViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,18 +506,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6090EFA2BC2F11F00860885 /* MessagesView.swift in Sources */,
+				F6090EF02BC2E7FF00860885 /* SearchViewController.swift in Sources */,
 				F69D2C392BC1D90300475719 /* AppCoordinator.swift in Sources */,
+				F6090EF42BC2F06600860885 /* FavouriteViewController.swift in Sources */,
 				F69D2C752BC2D35400475719 /* ReflectionCoordinator.swift in Sources */,
-				F69D2C232BC1BE0800475719 /* ViewController.swift in Sources */,
 				F69D2C4A2BC2C18900475719 /* SceneDelegate.swift in Sources */,
 				F69D2C1F2BC1BE0800475719 /* AppDelegate.swift in Sources */,
+				F6090EEC2BC2E70E00860885 /* SwiftUIWrapper.swift in Sources */,
 				F69D2C372BC1D8D000475719 /* Coordinator.swift in Sources */,
 				F69D2C732BC2D34000475719 /* FavouriteCoordinator.swift in Sources */,
 				F69D2C7A2BC2D38200475719 /* ProfileCoordinator.swift in Sources */,
 				F69D2C772BC2D36C00475719 /* MessagesCoordinator.swift in Sources */,
 				F69D2C712BC2D2E400475719 /* SearchCoordinator.swift in Sources */,
+				F6090EEE2BC2E7E700860885 /* SearchView.swift in Sources */,
 				F69D2C412BC2028400475719 /* TabBarType.swift in Sources */,
+				F6090F002BC2F19100860885 /* ProfileViewController.swift in Sources */,
+				F6090EFC2BC2F13D00860885 /* MessagesViewController.swift in Sources */,
 				F69D2C472BC212D200475719 /* TabBarCoordinator.swift in Sources */,
+				F6090EF62BC2F0BC00860885 /* ReflectionsView.swift in Sources */,
+				F6090EF22BC2F03700860885 /* FavouriteView.swift in Sources */,
+				F6090EF82BC2F0D300860885 /* ReflectionsViewController.swift in Sources */,
+				F6090EFE2BC2F17F00860885 /* ProfileView.swift in Sources */,
 				F69D2C292BC1BE0800475719 /* HeadHunter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

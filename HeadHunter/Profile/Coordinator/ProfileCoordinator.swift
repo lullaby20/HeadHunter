@@ -17,8 +17,7 @@ class ProfileCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
+        let viewController = ProfileViewController()
         
         navigationController.pushViewController(viewController, animated: true)
     }

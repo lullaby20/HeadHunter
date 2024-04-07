@@ -50,6 +50,8 @@ class TabBarCoordinator: NSObject, TabBarCoordinatorProtocol {
         tabBarController.setViewControllers(tabcontrollers, animated: true)
         tabBarController.selectedIndex = TabBarType.search.getOrderNumber()
         tabBarController.tabBar.isTranslucent = false
+        tabBarController.tabBar.barTintColor = .white
+        tabBarController.tabBar.tintColor = .specialBlue
         
         navigationController.viewControllers = [tabBarController]
     }
@@ -89,7 +91,6 @@ class TabBarCoordinator: NSObject, TabBarCoordinatorProtocol {
         navigationController.tabBarItem = UITabBarItem(title: tab.getTitleValue(),
                                                 image: tab.getImage(),
                                                 tag: tab.getOrderNumber())
-        navigationController.tabBarItem.selectedImage =  tab.getSelectedImage()
     }
 }
 
