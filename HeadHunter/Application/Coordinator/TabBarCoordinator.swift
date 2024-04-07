@@ -26,19 +26,19 @@ class TabBarCoordinator: NSObject, TabBarCoordinatorProtocol {
     }
     
     func start() {
-        let tabs: [TabBarType] = [.main, .settings]
+        let tabs: [TabBarType] = [.search, .favourite, .reflections, .messages, .profile]
         let controllers: [UINavigationController] = tabs.map { getTabController($0) }
         
         prepareTabBarController(withTabControllers: controllers)
     }
     
     func selectTab(_ tab: TabBarType) {
-        tabBarController.selectedIndex = tab.tabOrderNumber()
+        tabBarController.selectedIndex = tab.getOrderNumber()
     }
     
     func setSelectedTabIndex(_ index: Int) {
         guard let tab = TabBarType.init(index: index) else { return }
-        tabBarController.selectedIndex = tab.tabOrderNumber()
+        tabBarController.selectedIndex = tab.getOrderNumber()
     }
     
     func currentTab() -> TabBarType? {
@@ -48,7 +48,7 @@ class TabBarCoordinator: NSObject, TabBarCoordinatorProtocol {
     private func prepareTabBarController(withTabControllers tabcontrollers: [UIViewController]) {
         tabBarController.delegate = self
         tabBarController.setViewControllers(tabcontrollers, animated: true)
-        tabBarController.selectedIndex = TabBarType.main.tabOrderNumber()
+        tabBarController.selectedIndex = TabBarType.search.getOrderNumber()
         tabBarController.tabBar.isTranslucent = false
         
         navigationController.viewControllers = [tabBarController]
@@ -56,23 +56,40 @@ class TabBarCoordinator: NSObject, TabBarCoordinatorProtocol {
     
     private func getTabController(_ tab: TabBarType) -> UINavigationController {
         let navController = UINavigationController()
-        navController.setNavigationBarHidden(false, animated: false)
-        navController.tabBarItem = UITabBarItem(title: tab.tabTitleValue(), image: nil, tag: tab.tabOrderNumber())
+        configureTabBarItem(navController, tab: tab)
         
         switch tab {
-        case .main:
-            let viewController = UIViewController()
-            viewController.view.backgroundColor = .cyan
-            
-            navController.pushViewController(viewController, animated: true)
-        case .settings:
-            let viewController = UIViewController()
-            viewController.view.backgroundColor = .green
-            
-            navController.pushViewController(viewController, animated: true)
+        case .search:
+            let searchCoordinator = SearchCoordinator(navController)
+            searchCoordinator.start()
+            childCoordinators.append(searchCoordinator)
+        case .favourite:
+            let favouriteCoordinator = FavouriteCoordinator(navController)
+            favouriteCoordinator.start()
+            childCoordinators.append(favouriteCoordinator)
+        case .reflections:
+            let reflectionsCoordinator = ReflectionCoordinator(navController)
+            reflectionsCoordinator.start()
+            childCoordinators.append(reflectionsCoordinator)
+        case .messages:
+            let messagesCoordinator = MessagesCoordinator(navController)
+            messagesCoordinator.start()
+            childCoordinators.append(messagesCoordinator)
+        case .profile:
+            let profileCoordinator = ProfileCoordinator(navController)
+            profileCoordinator.start()
+            childCoordinators.append(profileCoordinator)
         }
         
         return navController
+    }
+    
+    private func configureTabBarItem(_ navigationController: UINavigationController, tab: TabBarType) {
+        navigationController.setNavigationBarHidden(false, animated: false)
+        navigationController.tabBarItem = UITabBarItem(title: tab.getTitleValue(),
+                                                image: tab.getImage(),
+                                                tag: tab.getOrderNumber())
+        navigationController.tabBarItem.selectedImage =  tab.getSelectedImage()
     }
 }
 

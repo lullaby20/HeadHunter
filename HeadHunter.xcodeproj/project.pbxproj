@@ -14,9 +14,14 @@
 		F69D2C2E2BC1BE0900475719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69D2C2C2BC1BE0900475719 /* LaunchScreen.storyboard */; };
 		F69D2C372BC1D8D000475719 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C362BC1D8D000475719 /* Coordinator.swift */; };
 		F69D2C392BC1D90300475719 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C382BC1D90300475719 /* AppCoordinator.swift */; };
-		F69D2C3B2BC1DBB900475719 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C3A2BC1DBB900475719 /* SceneDelegate.swift */; };
 		F69D2C412BC2028400475719 /* TabBarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C402BC2028400475719 /* TabBarType.swift */; };
 		F69D2C472BC212D200475719 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C462BC212D200475719 /* TabBarCoordinator.swift */; };
+		F69D2C4A2BC2C18900475719 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C492BC2C18900475719 /* SceneDelegate.swift */; };
+		F69D2C712BC2D2E400475719 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C702BC2D2E400475719 /* SearchCoordinator.swift */; };
+		F69D2C732BC2D34000475719 /* FavouriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C722BC2D34000475719 /* FavouriteCoordinator.swift */; };
+		F69D2C752BC2D35400475719 /* ReflectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C742BC2D35400475719 /* ReflectionCoordinator.swift */; };
+		F69D2C772BC2D36C00475719 /* MessagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C762BC2D36C00475719 /* MessagesCoordinator.swift */; };
+		F69D2C7A2BC2D38200475719 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69D2C792BC2D38200475719 /* ProfileCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +34,14 @@
 		F69D2C2F2BC1BE0900475719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F69D2C362BC1D8D000475719 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F69D2C382BC1D90300475719 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		F69D2C3A2BC1DBB900475719 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
 		F69D2C402BC2028400475719 /* TabBarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarType.swift; sourceTree = "<group>"; };
 		F69D2C462BC212D200475719 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F69D2C492BC2C18900475719 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F69D2C702BC2D2E400475719 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		F69D2C722BC2D34000475719 /* FavouriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCoordinator.swift; sourceTree = "<group>"; };
+		F69D2C742BC2D35400475719 /* ReflectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionCoordinator.swift; sourceTree = "<group>"; };
+		F69D2C762BC2D36C00475719 /* MessagesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCoordinator.swift; sourceTree = "<group>"; };
+		F69D2C792BC2D38200475719 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +74,13 @@
 		F69D2C1D2BC1BE0800475719 /* HeadHunter */ = {
 			isa = PBXGroup;
 			children = (
-				F69D2C352BC1D86400475719 /* Coordinator */,
-				F69D2C1E2BC1BE0800475719 /* AppDelegate.swift */,
-				F69D2C3A2BC1DBB900475719 /* SceneDelegate.swift */,
+				F69D2C692BC2D10500475719 /* Profile */,
+				F69D2C622BC2D0DC00475719 /* Messages */,
+				F69D2C5B2BC2D0B200475719 /* Reflections */,
+				F69D2C542BC2D08800475719 /* Favourite */,
+				F69D2C4D2BC2D01E00475719 /* Search */,
+				F69D2C482BC2C17C00475719 /* Application */,
 				F69D2C222BC1BE0800475719 /* ViewController.swift */,
-				F69D2C402BC2028400475719 /* TabBarType.swift */,
 				F69D2C2A2BC1BE0900475719 /* Assets.xcassets */,
 				F69D2C2C2BC1BE0900475719 /* LaunchScreen.storyboard */,
 				F69D2C2F2BC1BE0900475719 /* Info.plist */,
@@ -83,6 +95,297 @@
 				F69D2C362BC1D8D000475719 /* Coordinator.swift */,
 				F69D2C382BC1D90300475719 /* AppCoordinator.swift */,
 				F69D2C462BC212D200475719 /* TabBarCoordinator.swift */,
+				F69D2C402BC2028400475719 /* TabBarType.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F69D2C482BC2C17C00475719 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C492BC2C18900475719 /* SceneDelegate.swift */,
+				F69D2C1E2BC1BE0800475719 /* AppDelegate.swift */,
+				F69D2C352BC1D86400475719 /* Coordinator */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F69D2C4D2BC2D01E00475719 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C4E2BC2D02E00475719 /* Coordinator */,
+				F69D2C4F2BC2D03500475719 /* Presentation Layer */,
+				F69D2C522BC2D05B00475719 /* Data Layer */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F69D2C4E2BC2D02E00475719 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C702BC2D2E400475719 /* SearchCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F69D2C4F2BC2D03500475719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C512BC2D04200475719 /* Views */,
+				F69D2C502BC2D03C00475719 /* ViewModels */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C502BC2D03C00475719 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69D2C512BC2D04200475719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F69D2C522BC2D05B00475719 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C532BC2D06600475719 /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C532BC2D06600475719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F69D2C542BC2D08800475719 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C5A2BC2D0A900475719 /* Coordinator */,
+				F69D2C572BC2D09700475719 /* Presentation Layer */,
+				F69D2C552BC2D08F00475719 /* Data Layer */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		F69D2C552BC2D08F00475719 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C562BC2D09300475719 /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C562BC2D09300475719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F69D2C572BC2D09700475719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C592BC2D0A200475719 /* Views */,
+				F69D2C582BC2D09E00475719 /* ViewModels */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C582BC2D09E00475719 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69D2C592BC2D0A200475719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F69D2C5A2BC2D0A900475719 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C722BC2D34000475719 /* FavouriteCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F69D2C5B2BC2D0B200475719 /* Reflections */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C612BC2D0D400475719 /* Coordinator */,
+				F69D2C5E2BC2D0C300475719 /* Presentation Layer */,
+				F69D2C5C2BC2D0B800475719 /* Data Layer */,
+			);
+			path = Reflections;
+			sourceTree = "<group>";
+		};
+		F69D2C5C2BC2D0B800475719 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C5D2BC2D0BD00475719 /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C5D2BC2D0BD00475719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F69D2C5E2BC2D0C300475719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C602BC2D0CE00475719 /* Views */,
+				F69D2C5F2BC2D0C900475719 /* ViewModels */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C5F2BC2D0C900475719 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69D2C602BC2D0CE00475719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F69D2C612BC2D0D400475719 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C742BC2D35400475719 /* ReflectionCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F69D2C622BC2D0DC00475719 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C682BC2D0FD00475719 /* Coordinator */,
+				F69D2C652BC2D0ED00475719 /* Presentation Layer */,
+				F69D2C632BC2D0E100475719 /* Data Layer */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		F69D2C632BC2D0E100475719 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C642BC2D0E600475719 /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C642BC2D0E600475719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F69D2C652BC2D0ED00475719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C672BC2D0F900475719 /* Views */,
+				F69D2C662BC2D0F400475719 /* ViewModels */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C662BC2D0F400475719 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69D2C672BC2D0F900475719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F69D2C682BC2D0FD00475719 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C762BC2D36C00475719 /* MessagesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F69D2C692BC2D10500475719 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C6F2BC2D11F00475719 /* Coordinator */,
+				F69D2C6C2BC2D11200475719 /* Presentation Layer */,
+				F69D2C6A2BC2D10900475719 /* Data Layer */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F69D2C6A2BC2D10900475719 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C6B2BC2D10D00475719 /* Models */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C6B2BC2D10D00475719 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F69D2C6C2BC2D11200475719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C6E2BC2D11B00475719 /* Views */,
+				F69D2C6D2BC2D11700475719 /* ViewModels */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		F69D2C6D2BC2D11700475719 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69D2C6E2BC2D11B00475719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F69D2C6F2BC2D11F00475719 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F69D2C792BC2D38200475719 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -158,13 +461,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69D2C392BC1D90300475719 /* AppCoordinator.swift in Sources */,
+				F69D2C752BC2D35400475719 /* ReflectionCoordinator.swift in Sources */,
 				F69D2C232BC1BE0800475719 /* ViewController.swift in Sources */,
+				F69D2C4A2BC2C18900475719 /* SceneDelegate.swift in Sources */,
 				F69D2C1F2BC1BE0800475719 /* AppDelegate.swift in Sources */,
 				F69D2C372BC1D8D000475719 /* Coordinator.swift in Sources */,
+				F69D2C732BC2D34000475719 /* FavouriteCoordinator.swift in Sources */,
+				F69D2C7A2BC2D38200475719 /* ProfileCoordinator.swift in Sources */,
+				F69D2C772BC2D36C00475719 /* MessagesCoordinator.swift in Sources */,
+				F69D2C712BC2D2E400475719 /* SearchCoordinator.swift in Sources */,
 				F69D2C412BC2028400475719 /* TabBarType.swift in Sources */,
 				F69D2C472BC212D200475719 /* TabBarCoordinator.swift in Sources */,
 				F69D2C292BC1BE0800475719 /* HeadHunter.xcdatamodeld in Sources */,
-				F69D2C3B2BC1DBB900475719 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
